@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seatwork 2</title>
+	<!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Dancing+Script:wght@400..700&family=Lora:wght@400..700&family=Orbitron:wght@400..900&family=Poppins:wght@100..900&family=Tajawal&display=swap" rel="stylesheet">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row d-flex align-items-center">
+			<div class="col-sm-6 text-center text-sm-start">
+				<img src="img.png" class="img-fluid">
+			</div>
+			<div class="col-sm-6 text-start">
+				<div class="border p-4 rounded">
+					<h2>Hello! My name is Bao. Let's test your Math skill.</h2>
+					<p><strong>Given:</strong></p>
+        <label>Enter a value for a: <input type="number" id="a" placeholder="Enter a number"></label>
+        <br><br>
+        <label>Enter a value for b: <input type="number" id="b" placeholder="Enter a number"></label>
+        <br><br>
+        <button class="button"onclick="calculate('product')">Product of a and b</button>
+        <button class="button"onclick="calculate('power')">a raised to b</button>
+        <button class="button"onclick="calculate('remainder')">Get the remainder</button>
+        <button class="button"onclick="calculate('equal')">Check if a is equal to b</button>
+        <h3 id="result"></h3>
+    </div>
+    <script>
+        const operations = {
+            product: (a, b) => `The product is ${a * b}`,
+            power: (a, b) => `The result of a raised to b is ${a ** b}`,
+            remainder: (a, b) => `The remainder is ${a % b}`,
+            equal: (a, b) => a === b ? "a is equal to b" : "a is not equal to b"
+        };
+
+        function calculate(operation) {
+            let a = parseInt(document.getElementById('a').value) || 0;
+            let b = parseInt(document.getElementById('b').value) || 0;
+            alert(operations[operation](a, b));
+        }
+    </script>
+</body>
+</div>
+</container>
+<footer>
+    <p class="footer">&copy; <strong>Atasha Ko | 9-Sapphire</strong> </p>
+</footer>
+</html>

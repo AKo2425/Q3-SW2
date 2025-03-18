@@ -1,0 +1,39 @@
+body {
+	background-color:#0c1821;
+	color:#324a5f;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+h2 {
+	color: #3b5465;
+}
+
+p {
+	font-size: 40px;
+}
+
+
+.row {
+    background: #19242b;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.button {
+ 	background-color:#4f6d7a;
+ 	color:#0c1821;
+ 	border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer {
+	font-size:20px
+}
